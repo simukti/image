@@ -1,0 +1,7 @@
+<?php foreach ($this->photos as $photo) : ?>
+
+<a href="<?php echo $this->serverUrl() . IMAGE_PATH . $photo['original_filename']; ?>">
+    <img src="<?php echo $this->serverUrl() . IMAGE_PATH . $photo['thumb_filename']; ?>" />
+</a>
+
+<?php endforeach; ?>
